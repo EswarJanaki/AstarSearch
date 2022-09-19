@@ -12,8 +12,8 @@ def search(grid, init, goal, cost, delta, heuristic):
     visited[init[0]][init[1]] = 1
     expand = [[-1 for _ in range(len(grid[0]))] for _ in range(len(grid))]
     expand[init[0]][init[1]] = 0
-    x = init[0]
     y = init[1]
+    x = init[0]
     g = 0
     f = g + heuristic[x][y]
     minList = [f, g, x, y]
